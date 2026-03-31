@@ -1,7 +1,7 @@
 """
 Mainlayer API integration layer.
 
-Wraps the Mainlayer payment API (https://api.mainlayer.xyz) for:
+Wraps the Mainlayer payment API (https://api.mainlayer.fr) for:
   - Creating resources (tools listed on the marketplace)
   - Charging agents for tool access
   - Verifying payment status
@@ -18,7 +18,7 @@ import httpx
 
 logger = logging.getLogger(__name__)
 
-MAINLAYER_BASE_URL = os.getenv("MAINLAYER_BASE_URL", "https://api.mainlayer.xyz")
+MAINLAYER_BASE_URL = os.getenv("MAINLAYER_BASE_URL", "https://api.mainlayer.fr")
 MAINLAYER_API_KEY = os.getenv("MAINLAYER_API_KEY", "")
 
 _client: Optional[httpx.AsyncClient] = None

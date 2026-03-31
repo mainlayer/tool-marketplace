@@ -62,7 +62,7 @@ app = FastAPI(
         "Per-install billing powered by Mainlayer."
     ),
     version="1.0.0",
-    contact={"name": "Mainlayer", "url": "https://mainlayer.xyz"},
+    contact={"name": "Mainlayer", "url": "https://mainlayer.fr"},
     license_info={"name": "MIT"},
 )
 
